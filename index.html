@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer src="app.js"></script>
     <title>AB Capital</title>
 </head>
 
 <body>
     <!-- top nav -->
     <header>
-        <div class="info-panel">
+        <div class="info-panel hidden">
             <ul class="info__panel--list flex">
                 <li class="info__panel--item">1007, Iris Bay Tower, Business Bay Dubai</li>
                 <li class="info__panel--item">info@abcapital.ae</li>
@@ -30,14 +32,19 @@
                 <img src="./assets/images/AB-Capital logo.png" class="logo-image" alt="">
             </div>
             <ul class="nav__list flex">
-                <li class="nav__list--item"><a href="#home">Home</a></li>
-                <li class="nav__list--item"><a href="#about">About</a></li>
-                <li class="nav__list--item"><a href="#services">Services</a></li>
-                <li class="nav__list--item"><a href="#contact">Contact</a></li>
-                <li class="nav__list--item"><a href="">News & Media</a></li>
+                <li class="nav__list--item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__list--item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__list--item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__list--item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="nav__list--item"><a href="" class="nav__link">News & Media</a></li>
             </ul>
         </nav>
     </header>
+    <div class="hamburger">
+        <button class="hamburger-icon">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+    </div>
     <!-- hero section -->
     <section class="section-cont hero-section" id="home">
         <div class="box-container">
@@ -47,7 +54,6 @@
                 <button class="hero__box--btn">Register Now</button>
             </div>
         </div>
-
     </section>
     <main>
         <!-- skill section -->
@@ -55,7 +61,7 @@
             <div class="container skills-container">
                 <div class="skills__image">
                     <!-- image of the two people -->
-                    <img src="./assets/images/image of two people.jpg" alt="">
+                    <img src="./assets/images/image of two people.jpg" class="skills__image--img" alt="">
                 </div>
                 <div class="skills__details">
                     <h2 class="skills__title">Our expertise is your gain</h2>
@@ -80,7 +86,7 @@
                             <li>
                                 <div class="skills__text">
                                     <span>Performance</span>
-                                    <span>90%</span>
+                                    <span>80%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <div class="skills__bar--div-2"></div>
@@ -89,7 +95,7 @@
                             <li>
                                 <div class="skills__text">
                                     <span>Experience</span>
-                                    <span>90%</span>
+                                    <span>70%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <div class="skills__bar--div-3"></div>
@@ -250,7 +256,7 @@
                     <p>Please fill in your details below, and our advisors will give you a call.</p>
                 </div>
                 <div class="connect__form--container">
-                    <p>I would like to discuss:</p>
+                    <p class="connect__form--text">I would like to discuss:</p>
                     <!-- form section -->
                     <form action="">
                         <select name="services" id="service">
@@ -261,7 +267,7 @@
                         </select>
                         <input type="text" placeholder="First Name">
                         <input type="text" placeholder="Phone Number">
-                        <button type="submit" class="form-btn">CALL ME BACK &RightAngleBracket;</button>
+                        <button type="submit" class="form-btn">CALL ME BACK </button>
                     </form>
                 </div>
             </div>
@@ -291,7 +297,7 @@
                 </div>
             </div>
             <hr>
-            <p>© 2022 Copyright ©All rights reserved</p>
+            <p class="copyright-text">© 2022 Copyright ©All rights reserved</p>
         </section>
     </footer>
 </body>
