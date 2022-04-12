@@ -315,7 +315,7 @@ img {
 }
 .news__box--container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
 }
 .news__box {
@@ -428,7 +428,7 @@ img {
 
 /* testing */
 .hidden {
-  display: none;
+  /* display: none; */
 }
 
 .hamburger {
@@ -469,7 +469,9 @@ img {
     background-position: center;
     overflow: hidden;
   }
-
+  .info-panel {
+    display: none;
+  }
   /* skill section */
 
   .skills__image--img {
