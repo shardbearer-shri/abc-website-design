@@ -147,11 +147,11 @@ img {
 .skills-container {
   display: flex;
   min-height: 70vh;
-  gap: 2rem;
 }
 .skills__image {
-  min-width: 500px;
+  min-width: 400px;
   align-items: center;
+  margin: 0 auto;
   padding: 5rem 0rem;
 }
 .skills__title {
@@ -507,7 +507,10 @@ img {
   }
   .connect-container {
     flex-direction: column;
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
+  }
+  .connect-container div {
+    padding-left: 1rem;
   }
   .bottom__info div {
     margin: 1rem 0rem;
