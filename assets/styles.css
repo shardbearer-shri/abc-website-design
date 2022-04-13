@@ -160,6 +160,10 @@ img {
   font-weight: 300;
   padding: 1rem 0rem;
 }
+
+.skills__details {
+  padding: 0rem 1rem;
+}
 .skills__details p {
   font-weight: 300;
   color: var(--clr-dark);
