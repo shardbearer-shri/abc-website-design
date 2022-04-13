@@ -586,3 +586,12 @@ ion-icon {
     margin: auto;
   }
 }
+/* .connect__form--container form  */
+@media (max-width: 700px)  {
+  .connect__form--container form {
+    flex-direction: column;
+  }
+  .form-btn {
+    max-width: fit-content;
+  }
+}
