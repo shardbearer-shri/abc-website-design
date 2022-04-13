@@ -309,7 +309,16 @@ img {
   display: flex;
 }
 .parralax__item {
+  display: flex;
+  align-items: center;
   margin-right: 1rem;
+  font-size: 1.1rem;
+}
+ion-icon {
+  color: var(--clr-accent);
+}
+.parralax__item p {
+  padding-left: 0.5rem;
 }
 /* dont forget to add images */
 .news__title {
@@ -341,6 +350,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.news__timeline--date {
+  display: flex;
+  align-items: center;
+}
+.news__timeline--date p {
+  padding-left: 0.3rem;
 }
 .news__button {
   border: 1px solid var(--clr-accent);
@@ -424,6 +440,13 @@ img {
 .bottom__info {
   display: flex;
   justify-content: space-between;
+}
+.bottom__list {
+  display: flex;
+  align-items: center;
+}
+.bottom__list p {
+  padding-left: 0.5rem;
 }
 .bottom__info div {
 }
